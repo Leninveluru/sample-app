@@ -1,0 +1,27 @@
+<div class="row" style="background-color: #00ff00; height: 50px">
+	<div class="col-xs-9 adjust-position"><a href="#/addcontact" class="btn">Add Contact</a></div>
+	<div class="col-xs-3 pull-right">
+		 <input class="searchInput" type="text"  size="21" maxlength="120"  ng-model="searchText"/>
+         <input class="submitinput" type="submit" value="search"  />
+	</div>
+</div>
+<div class="row text-center list-name">
+        Contact List
+</div><hr>
+
+<div>
+	<div class="row cm-list" ng-repeat="list in contactList | filter: searchText">
+		<div class="col-md-1">
+			<img ng-src="images/avatar.png" width="60" height="60">
+		</div>
+		<div class="col-md-9">
+			<span>Name : {{list.name}}</span><br/>
+			<span>mobile : {{list.mobile}}</span><br/>
+			<span>email : {{list.email}}</span>
+		</div>
+		<div class="col-md-2 pull-right edit">
+			<a class="edit-btn" href="#/deletecontact" ng-click="editCm(list.id)">Edit &nbsp;| </a>
+			<a class="delete-btn" href="#/" ng-click="deleteCon(list.id)">Delete</a>
+		</div>		
+	</div>
+</div>

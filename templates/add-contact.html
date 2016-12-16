@@ -1,0 +1,40 @@
+
+<div>
+	<div class="create-contact">Create Contact</div><hr>
+	<form name="form" role="form" class="form-horizontal contract-form">
+
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Full name:</label>
+          <div class="col-sm-6">
+            <input type="text" id="fullName" class="form-control contact-name-input" ng-model="modelcm.name" maxlength="20"  placeholder="Full name" />
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Telephone number:</label>
+          <div class="col-sm-6">
+            <input type="number" required maxlength="13" class="form-control contact-tel-input"  ng-model="modelcm.mobile" placeholder="Telephone number" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Email address:</label>
+          <div class="col-sm-6">
+            <input name="email" type="email" class="form-control contact-tel-input" ng-model="modelcm.email" maxlength="40" placeholder="Email address" required="" />
+          </div>
+ 
+        </div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-1">
+              <input type="submit" value="submit" class="btn" ng-click="addContactHandler(form, $event)"/>
+            </div>
+            <div class="col-xs-3">
+              <a href="#/" class="btn">Cancel</a>
+            </div>
+        </div>  
+
+      </form>
+</div>
+	

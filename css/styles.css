@@ -1,0 +1,115 @@
+.row{
+	padding: 10px;
+	border: none;
+	margin-bottom: 5px;
+}
+
+.header-text{
+	padding: 30px 15px;
+	font-size: 30px;
+	color: #ffffff;
+ 	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #00b2ee;
+}
+
+.btn {
+	position: relative;
+  	font-size: 17px;
+  	border: 1;
+  	border-radius: 5px;
+  	top: -5px;
+  	color: #00b2ee;
+  	background-color: #ffffff;
+  	border-color: #00b2ee;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #fff;
+  background-color: #00b2ee;
+  border-color: #00b2ee;
+}
+
+.searchInput {
+	position: relative;
+	padding: 5px 5px;
+	font-size:14px;
+	border:1px solid #00b2ee; border-right:0px;
+	border-top-left-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+}
+
+.submitinput {
+	position: relative;
+	margin-right: 10px;
+	padding: 5px 5px;
+	font-size:14px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: solid 1px #00b2ee;
+	background: #00b2ee;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+}
+
+.list-name, .create-contact{
+  	padding: 5px;
+  	font-size: 25px;
+  	color: #00b2ee;
+  	text-align: center;
+  	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  	text-decoration: underline;
+}
+
+.set-right {
+	 font-size: 20px;
+    left: 0;
+    position: relative;
+    text-align: right;
+}
+
+.cm-list{
+	border-bottom:1px solid #cccccc;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 14px;
+} 
+
+.cm-list:nth-child(odd) {
+    background: #f0f8ff;
+}
+.cm-list:nth-child(even) {
+    background: #fff0f5;
+}
+
+.edit{
+	line-height: 75px;
+	text-align: right;
+}
+
+.edit-btn .delete-btn{
+	color: #00b2ee;
+  	background-color: #ffffff;
+  	position: relative;
+  	font-size: 15px;
+}
+
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active {
+  color: #00b2ee; 
+  border-color: #00b2ee;
+}
+.delete-btn:hover,
+.delete-btn:focus,
+.delete-btn:active {
+  color: #00b2ee; 
+  border-color: #00b2ee;
+}
+
+.adjust-submit{
+	left: 450px;
+}
